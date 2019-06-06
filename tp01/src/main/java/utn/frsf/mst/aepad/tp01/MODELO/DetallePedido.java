@@ -1,6 +1,13 @@
 package utn.frsf.mst.aepad.tp01.MODELO;
 
+import javax.persistence.Entity;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+
+@Entity
 public class DetallePedido {
+    @ManyToOne
+    @JoinColumn(name = "ID_PRODUCTO")
     private Producto producto;
     private int cantidad;
     private Double precio;

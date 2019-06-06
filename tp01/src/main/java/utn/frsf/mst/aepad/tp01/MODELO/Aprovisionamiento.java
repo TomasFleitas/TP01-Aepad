@@ -1,19 +1,31 @@
 package utn.frsf.mst.aepad.tp01.MODELO;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
+import javax.persistence.*;
 import java.util.Date;
 
+@Entity
 public class Aprovisionamiento {
 
-    private String id;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int id;
     private int nro;
     private Date fecha;
+
+    @ManyToOne
+    @JoinColumn(name = "ID_CLIENTE")
     private Cliente cliente;
+
+    @ManyToOne
+    @JoinColumn(name = "ID_DETALLE_PEDIDO")
     private DetallePedido detallePedido;
 
     public Aprovisionamiento() {
     }
 
-    public Aprovisionamiento(String id, int nro, Date fecha, Cliente cliente, DetallePedido detallePedido) {
+    public Aprovisionamiento(int id, int nro, Date fecha, Cliente cliente, DetallePedido detallePedido) {
         this.id = id;
         this.nro = nro;
         this.fecha = fecha;
@@ -21,11 +33,11 @@ public class Aprovisionamiento {
         this.detallePedido = detallePedido;
     }
 
-    public String getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(int id) {
         this.id = id;
     }
 

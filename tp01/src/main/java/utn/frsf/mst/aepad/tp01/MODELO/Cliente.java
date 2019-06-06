@@ -1,12 +1,25 @@
 package utn.frsf.mst.aepad.tp01.MODELO;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
+import javax.persistence.*;
 import java.util.ArrayList;
 
+@Entity
 public class Cliente {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private String id;
     private String nombre;
     private String localidad;
+
+    @OneToMany(mappedBy = "cliente")
+    @JsonIgnore
     private ArrayList<Pedido> pedidosRealizados;
+
+    @ManyToOne
+    @JoinColumn(name = "ID_MEDIO_DE_PAGO")
     private MedioDePago medioDePago;
     private int pagosRealizados;
     private int puntosAcumulados;

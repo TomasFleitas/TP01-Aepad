@@ -1,5 +1,8 @@
 package utn.frsf.mst.aepad.tp01.MODELO;
 
+import javax.persistence.Entity;
+
+@Entity
 public class Usuario {
 
     private String nombreUsuario;

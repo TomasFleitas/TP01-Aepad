@@ -1,6 +1,16 @@
 package utn.frsf.mst.aepad.tp01.MODELO;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
+import javax.persistence.Entity;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
+
+@Entity
 public class DetalleOrdenCompra {
+    @ManyToOne
+    @JoinColumn(name = "ID_PRODUCTO")
     private Producto producto;
     private int cantidad;
     private Double precio;

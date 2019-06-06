@@ -1,6 +1,16 @@
 package utn.frsf.mst.aepad.tp01.MODELO;
 
+import org.springframework.data.repository.cdi.Eager;
+
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+@Eager
 public class Producto {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private String id;
     private String descripcion;
     private Double precio;

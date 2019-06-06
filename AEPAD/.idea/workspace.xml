@@ -1,19 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d8bb9e24-7e77-4418-82f5-acd6550469ba" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../tp01/src/main/java/utn/frsf/mst/aepad/tp01/MODELO/Aprovisionamiento.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../tp01/src/main/java/utn/frsf/mst/aepad/tp01/MODELO/Cliente.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../tp01/src/main/java/utn/frsf/mst/aepad/tp01/MODELO/DetalleOrdenCompra.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../tp01/src/main/java/utn/frsf/mst/aepad/tp01/MODELO/DetallePedido.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../tp01/src/main/java/utn/frsf/mst/aepad/tp01/MODELO/Localidad.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../tp01/src/main/java/utn/frsf/mst/aepad/tp01/MODELO/MedioDePago.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../tp01/src/main/java/utn/frsf/mst/aepad/tp01/MODELO/Pedido.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../tp01/src/main/java/utn/frsf/mst/aepad/tp01/MODELO/Producto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../tp01/src/main/java/utn/frsf/mst/aepad/tp01/MODELO/Usuario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../tp01/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../tp01/src/main/resources/application.properties" afterDir="false" />
-    </list>
+    <list default="true" id="d8bb9e24-7e77-4418-82f5-acd6550469ba" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/../tp01/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -76,10 +64,11 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="952" />
-    <option name="width" value="977" />
-    <option name="height" value="1088" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="305" />
+    <option name="y" value="217" />
+    <option name="width" value="979" />
+    <option name="height" value="1090" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -112,11 +101,6 @@
               <item name="AEPAD" type="58d84e3e:PackageViewProjectNode" />
               <item name="tp01" type="616d4139:PackageViewModuleNode" />
             </path>
-            <path>
-              <item name="AEPAD" type="58d84e3e:PackageViewProjectNode" />
-              <item name="tp01" type="616d4139:PackageViewModuleNode" />
-              <item name="utn.frsf.mst.aepad.tp01" type="1f31426a:PackageElementNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -129,6 +113,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/../tp01/src/main/java/utn/frsf/mst/aepad/tp01" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Ejemplo" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -169,17 +154,17 @@
       <option name="presentableId" value="Default" />
       <updated>1559683355805</updated>
       <workItem from="1559683357199" duration="634000" />
-      <workItem from="1559849293723" duration="1501000" />
+      <workItem from="1559849293723" duration="2259000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2135000" />
+    <option name="totallyTimeSpent" value="2893000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="762" y="0" width="781" height="870" extended-state="0" />
+    <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.32177532" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15570469" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />

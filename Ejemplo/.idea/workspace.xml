@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="7fa82cb5-cf0d-4446-a313-e9d4d71ff551" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../tp01/src/main/java/utn/frsf/mst/aepad/tp01/repository/AprovisionamientoRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tp01/src/main/java/utn/frsf/mst/aepad/tp01/repository/ClienteRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tp01/src/main/java/utn/frsf/mst/aepad/tp01/repository/DetalleOrdenCompraRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tp01/src/main/java/utn/frsf/mst/aepad/tp01/repository/DetallePedidoRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tp01/src/main/java/utn/frsf/mst/aepad/tp01/repository/LocalidadRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tp01/src/main/java/utn/frsf/mst/aepad/tp01/repository/MedioDePagoRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tp01/src/main/java/utn/frsf/mst/aepad/tp01/repository/PedidoRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tp01/src/main/java/utn/frsf/mst/aepad/tp01/repository/ProductoRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tp01/src/main/java/utn/frsf/mst/aepad/tp01/repository/UsuarioRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tp01/src/main/java/utn/frsf/mst/aepad/tp01/resources/AprovisionamientoResource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../tp01/src/main/java/utn/frsf/mst/aepad/tp01/service/AprovisionamientoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AEPAD/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../AEPAD/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.classpath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.settings/org.eclipse.core.resources.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.settings/org.eclipse.m2e.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tp01/src/main/java/utn/frsf/mst/aepad/tp01/MODELO/Aprovisionamiento.java" beforeDir="false" afterPath="$PROJECT_DIR$/../tp01/src/main/java/utn/frsf/mst/aepad/tp01/MODELO/Aprovisionamiento.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tp01/src/main/java/utn/frsf/mst/aepad/tp01/MODELO/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/../tp01/src/main/java/utn/frsf/mst/aepad/tp01/MODELO/Cliente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tp01/src/main/java/utn/frsf/mst/aepad/tp01/MODELO/DetalleOrdenCompra.java" beforeDir="false" afterPath="$PROJECT_DIR$/../tp01/src/main/java/utn/frsf/mst/aepad/tp01/MODELO/DetalleOrdenCompra.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tp01/src/main/java/utn/frsf/mst/aepad/tp01/MODELO/DetallePedido.java" beforeDir="false" afterPath="$PROJECT_DIR$/../tp01/src/main/java/utn/frsf/mst/aepad/tp01/MODELO/DetallePedido.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tp01/src/main/java/utn/frsf/mst/aepad/tp01/MODELO/Localidad.java" beforeDir="false" afterPath="$PROJECT_DIR$/../tp01/src/main/java/utn/frsf/mst/aepad/tp01/MODELO/Localidad.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tp01/src/main/java/utn/frsf/mst/aepad/tp01/MODELO/MedioDePago.java" beforeDir="false" afterPath="$PROJECT_DIR$/../tp01/src/main/java/utn/frsf/mst/aepad/tp01/MODELO/MedioDePago.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tp01/src/main/java/utn/frsf/mst/aepad/tp01/MODELO/Pedido.java" beforeDir="false" afterPath="$PROJECT_DIR$/../tp01/src/main/java/utn/frsf/mst/aepad/tp01/MODELO/Pedido.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tp01/src/main/java/utn/frsf/mst/aepad/tp01/MODELO/Producto.java" beforeDir="false" afterPath="$PROJECT_DIR$/../tp01/src/main/java/utn/frsf/mst/aepad/tp01/MODELO/Producto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tp01/src/main/java/utn/frsf/mst/aepad/tp01/MODELO/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/../tp01/src/main/java/utn/frsf/mst/aepad/tp01/MODELO/Usuario.java" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/classes/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/isi/aepad/tp01/Tp01Application.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+              <folding>
+                <element signature="e#370#371#0" expanded="true" />
+                <element signature="e#427#428#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/isi/aepad/tp01/domain/Proyecto.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="14" column="21" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/isi/aepad/tp01/domain/Tarea.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="20" column="30" lean-forward="true" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/isi/aepad/tp01/repository/ProyectoRepository.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/isi/aepad/tp01/repository/TareaRepository.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="9" column="86" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="86" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/isi/aepad/tp01/resources/ProyectoResource.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="37" column="77" selection-start-line="37" selection-start-column="66" selection-end-line="37" selection-end-column="77" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/isi/aepad/tp01/resources/TareaResource.java">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>ProyectoServiceDefault</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectConfigurationFiles">
+    <option name="files">
+      <list>
+        <option value="$PROJECT_DIR$/.idea/Ejemplo.iml" />
+        <option value="$PROJECT_DIR$/.idea/modules.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-9" />
+    <option name="y" value="-9" />
+    <option name="width" value="978" />
+    <option name="height" value="1089" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="tp01" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Ejemplo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tp01" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Ejemplo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tp01" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Ejemplo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tp01" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Ejemplo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tp01" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Ejemplo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="isi" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tp01" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Ejemplo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="isi" type="462c0819:PsiDirectoryNode" />
+              <item name="aepad" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tp01" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Ejemplo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="isi" type="462c0819:PsiDirectoryNode" />
+              <item name="aepad" type="462c0819:PsiDirectoryNode" />
+              <item name="tp01" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tp01" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Ejemplo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="isi" type="462c0819:PsiDirectoryNode" />
+              <item name="aepad" type="462c0819:PsiDirectoryNode" />
+              <item name="tp01" type="462c0819:PsiDirectoryNode" />
+              <item name="domain" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tp01" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Ejemplo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="isi" type="462c0819:PsiDirectoryNode" />
+              <item name="aepad" type="462c0819:PsiDirectoryNode" />
+              <item name="tp01" type="462c0819:PsiDirectoryNode" />
+              <item name="repository" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tp01" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Ejemplo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="isi" type="462c0819:PsiDirectoryNode" />
+              <item name="aepad" type="462c0819:PsiDirectoryNode" />
+              <item name="tp01" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tp01" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Ejemplo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="isi" type="462c0819:PsiDirectoryNode" />
+              <item name="aepad" type="462c0819:PsiDirectoryNode" />
+              <item name="tp01" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tp01" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Ejemplo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="isi" type="462c0819:PsiDirectoryNode" />
+              <item name="aepad" type="462c0819:PsiDirectoryNode" />
+              <item name="tp01" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope">
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+          <expand>
+            <path>
+              <item name="tp01" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="Ejemplo" type="2674bda8:ScopeViewTreeModel$GroupNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7fa82cb5-cf0d-4446-a313-e9d4d71ff551" name="Default Changelist" comment="" />
+      <created>1559851500823</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1559851500823</updated>
+      <workItem from="1559851504863" duration="32000" />
+      <workItem from="1559851595682" duration="215000" />
+      <workItem from="1559851833502" duration="524000" />
+      <workItem from="1559852387167" duration="9000" />
+      <workItem from="1559852484121" duration="3896000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="4676000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="938" y="0" width="605" height="870" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.055045873" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="12" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Theme Preview" order="4" />
+      <window_info anchor="right" id="Maven" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Database" order="8" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/.project" />
+    <entry file="file://$PROJECT_DIR$/.classpath" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/isi/aepad/tp01/Tp01Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="11" column="23" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+          <folding>
+            <element signature="e#370#371#0" expanded="true" />
+            <element signature="e#427#428#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/isi/aepad/tp01/domain/Tarea.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="20" column="30" lean-forward="true" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/isi/aepad/tp01/resources/TareaResource.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/isi/aepad/tp01/domain/Proyecto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="14" column="21" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/isi/aepad/tp01/repository/ProyectoRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/isi/aepad/tp01/service/impl/ProyectoServiceDefault.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="38" column="4" lean-forward="true" selection-start-line="15" selection-start-column="4" selection-end-line="38" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/isi/aepad/tp01/service/ProyectoService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/isi/aepad/tp01/resources/ProyectoResource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="37" column="77" selection-start-line="37" selection-start-column="66" selection-end-line="37" selection-end-column="77" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/isi/aepad/tp01/repository/TareaRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="86" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="86" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
