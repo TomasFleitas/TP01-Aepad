@@ -49,7 +49,7 @@ public class AprovisionamientoResource {
         return new ResponseEntity<Aprovisionamiento>(actualizar, HttpStatus.OK);
     }
 
-    @DeleteMapping("proyecto/{id}")
+    @DeleteMapping("aprovisionamiento/{id}")
     public ResponseEntity<Void> borrar(@RequestParam(value="id") Integer idProyecto) {
         this.aprovisionamientoService.borrar(idProyecto);
         return new ResponseEntity<Void>(HttpStatus.OK);

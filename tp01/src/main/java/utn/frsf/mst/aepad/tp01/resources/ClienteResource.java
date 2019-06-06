@@ -48,7 +48,7 @@ public class ClienteResource {
         return new ResponseEntity<Cliente>(actualizar, HttpStatus.OK);
     }
 
-    @DeleteMapping("proyecto/{id}")
+    @DeleteMapping("cliente/{id}")
     public ResponseEntity<Void> borrar(@RequestParam(value="id") Integer idProyecto) {
         this.clienteService.borrar(idProyecto);
         return new ResponseEntity<Void>(HttpStatus.OK);

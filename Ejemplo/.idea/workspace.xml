@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7fa82cb5-cf0d-4446-a313-e9d4d71ff551" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../tp01/src/main/java/utn/frsf/mst/aepad/tp01/resources/ClienteResource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../tp01/src/main/java/utn/frsf/mst/aepad/tp01/service/ClienteService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../tp01/src/main/java/utn/frsf/mst/aepad/tp01/service/impl/ClienteServiceDefault.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tp01/src/main/java/utn/frsf/mst/aepad/tp01/resources/AprovisionamientoResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/../tp01/src/main/java/utn/frsf/mst/aepad/tp01/resources/AprovisionamientoResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tp01/src/main/java/utn/frsf/mst/aepad/tp01/resources/ClienteResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/../tp01/src/main/java/utn/frsf/mst/aepad/tp01/resources/ClienteResource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tp01/src/main/java/utn/frsf/mst/aepad/tp01/service/ClienteService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../tp01/src/main/java/utn/frsf/mst/aepad/tp01/service/ClienteService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../tp01/src/main/java/utn/frsf/mst/aepad/tp01/service/impl/ClienteServiceDefault.java" beforeDir="false" afterPath="$PROJECT_DIR$/../tp01/src/main/java/utn/frsf/mst/aepad/tp01/service/impl/ClienteServiceDefault.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -278,12 +278,12 @@
       <workItem from="1559851833502" duration="524000" />
       <workItem from="1559852387167" duration="9000" />
       <workItem from="1559852484121" duration="4012000" />
-      <workItem from="1559859328551" duration="390000" />
+      <workItem from="1559859328551" duration="678000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5182000" />
+    <option name="totallyTimeSpent" value="5470000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="762" y="0" width="781" height="870" extended-state="0" />
