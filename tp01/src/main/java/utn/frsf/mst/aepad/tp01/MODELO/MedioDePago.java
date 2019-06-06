@@ -9,22 +9,22 @@ import javax.persistence.Id;
 public class MedioDePago {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private String id;
+    private int id;
     private String descripcion;
 
     public MedioDePago() {
     }
 
-    public MedioDePago(String id, String descripcion) {
+    public MedioDePago(int id, String descripcion) {
         this.id = id;
         this.descripcion = descripcion;
     }
 
-    public String getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(int id) {
         this.id = id;
     }
 
