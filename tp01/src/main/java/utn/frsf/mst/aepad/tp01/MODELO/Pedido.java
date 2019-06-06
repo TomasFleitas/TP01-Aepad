@@ -7,7 +7,7 @@ import java.util.Date;
 public class Pedido {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private String id;
+    private int id;
     private int nro;
     private Date fecha;
 
@@ -28,11 +28,11 @@ public class Pedido {
         this.detallePedido = detallePedido;
     }
 
-    public String getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(int id) {
         this.id = id;
     }
 
