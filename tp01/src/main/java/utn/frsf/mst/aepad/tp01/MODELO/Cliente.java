@@ -10,7 +10,7 @@ public class Cliente {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private String id;
+    private int id;
     private String nombre;
     private String localidad;
 
@@ -27,7 +27,7 @@ public class Cliente {
     public Cliente() {
     }
 
-    public Cliente(String id, String nombre, String localidad, ArrayList<Pedido> pedidosRealizados, MedioDePago medioDePago, int pagosRealizados, int puntosAcumulados) {
+    public Cliente(int id, String nombre, String localidad, ArrayList<Pedido> pedidosRealizados, MedioDePago medioDePago, int pagosRealizados, int puntosAcumulados) {
         this.id = id;
         this.nombre = nombre;
         this.localidad = localidad;
@@ -37,11 +37,11 @@ public class Cliente {
         this.puntosAcumulados = puntosAcumulados;
     }
 
-    public String getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(int id) {
         this.id = id;
     }
 

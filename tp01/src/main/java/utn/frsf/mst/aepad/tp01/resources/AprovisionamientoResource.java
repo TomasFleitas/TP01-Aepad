@@ -39,7 +39,7 @@ public class AprovisionamientoResource {
             return new ResponseEntity<Aprovisionamiento>(HttpStatus.NO_CONTENT);
         }
         HttpHeaders headers = new HttpHeaders();
-        headers.setLocation(builder.path("/api/proyecto/{id}").buildAndExpand(creado.getId()).toUri());
+        headers.setLocation(builder.path("/api/aprovisionamiento/{id}").buildAndExpand(creado.getId()).toUri());
         return new ResponseEntity<Aprovisionamiento>(creado,headers, HttpStatus.CREATED);
     }
 
