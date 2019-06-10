@@ -1,11 +1,12 @@
 package utn.frsf.mst.aepad.tp01.MODELO;
 
-import javax.persistence.Entity;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
+import javax.persistence.*;
 
 @Entity
 public class DetallePedido {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int id;
     @ManyToOne
     @JoinColumn(name = "ID_PRODUCTO")
     private Producto producto;
@@ -21,6 +22,14 @@ public class DetallePedido {
         this.cantidad = cantidad;
         this.precio = precio;
         this.total = total;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public Producto getProducto() {
