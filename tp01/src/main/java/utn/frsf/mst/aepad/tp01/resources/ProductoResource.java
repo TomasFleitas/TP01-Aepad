@@ -36,11 +36,11 @@ public class ProductoResource {
             return new ResponseEntity<Producto>(HttpStatus.NO_CONTENT);
         }
         HttpHeaders headers = new HttpHeaders();
-        headers.setLocation(builder.path("/api/cliente/{id}").buildAndExpand(creado.getId()).toUri());
+        headers.setLocation(builder.path("/api/producto/{id}").buildAndExpand(creado.getId()).toUri());
         return new ResponseEntity<Producto>(creado,headers, HttpStatus.CREATED);
     }
 
-    @PutMapping("cliproductoente")
+    @PutMapping("producto")
     public ResponseEntity<Producto> actualizar(@RequestBody Producto p,UriComponentsBuilder builder) {
         Producto actualizar = this.productoService.guardar(p);
         return new ResponseEntity<Producto>(actualizar, HttpStatus.OK);
