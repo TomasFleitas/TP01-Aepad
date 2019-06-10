@@ -21,11 +21,11 @@ public class Usuario {
         this.email = email;
     }
 
-    public String getNombreUsuario() {
+    public String getId() {
         return nombreUsuario;
     }
 
-    public void setNombreUsuario(String nombreUsuario) {
+    public void setId(String nombreUsuario) {
         this.nombreUsuario = nombreUsuario;
     }
 
