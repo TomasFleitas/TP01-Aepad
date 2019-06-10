@@ -1,4 +1,7 @@
 package utn.frsf.mst.aepad.tp01.repository;
 
-public interface UsuarioRepository {
+import org.springframework.data.jpa.repository.JpaRepository;
+import utn.frsf.mst.aepad.tp01.MODELO.Usuario;
+
+public interface UsuarioRepository extends JpaRepository<Usuario,Integer> {
 }

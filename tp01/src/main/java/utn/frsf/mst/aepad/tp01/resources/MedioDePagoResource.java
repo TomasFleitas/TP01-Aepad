@@ -18,35 +18,35 @@ public class MedioDePagoResource {
     @Autowired
     private MedioDePagoService medioDePagoService;
 
-    @GetMapping("mediodepago")
+    @GetMapping("medioDePago")
     public ResponseEntity<List<MedioDePago>> buscar() {
         return  new ResponseEntity<List<MedioDePago>>(this.medioDePagoService.buscarTodas(), HttpStatus.OK);
     }
 
 
-    @GetMapping("mediodepago/{id}")
+    @GetMapping("medioDePago/{id}")
     public ResponseEntity<MedioDePago> buscar(@RequestParam(value="id") Integer idProyecto) {
         return  new ResponseEntity<MedioDePago>(this.medioDePagoService.buscarPorId(idProyecto), HttpStatus.OK);
     }
 
-    @PostMapping("mediodepago")
+    @PostMapping("medioDePago")
     public ResponseEntity<MedioDePago> crear(@RequestBody MedioDePago p, UriComponentsBuilder builder) {
         MedioDePago creado = this.medioDePagoService.guardar(p);
         if (creado == null) {
             return new ResponseEntity<MedioDePago>(HttpStatus.NO_CONTENT);
         }
         HttpHeaders headers = new HttpHeaders();
-        headers.setLocation(builder.path("/api/mediodepago/{id}").buildAndExpand(creado.getId()).toUri());
+        headers.setLocation(builder.path("/api/medioDePago/{id}").buildAndExpand(creado.getId()).toUri());
         return new ResponseEntity<MedioDePago>(creado,headers, HttpStatus.CREATED);
     }
 
-    @PutMapping("mediodepago")
+    @PutMapping("medioDePago")
     public ResponseEntity<MedioDePago> actualizar(@RequestBody MedioDePago p,UriComponentsBuilder builder) {
         MedioDePago actualizar = this.medioDePagoService.guardar(p);
         return new ResponseEntity<MedioDePago>(actualizar, HttpStatus.OK);
     }
 
-    @DeleteMapping("mediodepago/{id}")
+    @DeleteMapping("medioDePago/{id}")
     public ResponseEntity<Void> borrar(@RequestParam(value="id") Integer idProyecto) {
         this.medioDePagoService.borrar(idProyecto);
         return new ResponseEntity<Void>(HttpStatus.OK);
