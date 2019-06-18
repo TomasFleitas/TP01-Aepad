@@ -2,13 +2,14 @@ package utn.frsf.mst.aepad.tp01.MODELO;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
-import javax.persistence.Entity;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
-import javax.persistence.OneToMany;
+import javax.persistence.*;
 
 @Entity
 public class DetalleOrdenCompra {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int id;
     @ManyToOne
     @JoinColumn(name = "ID_PRODUCTO")
     private Producto producto;
@@ -24,6 +25,14 @@ public class DetalleOrdenCompra {
         this.cantidad = cantidad;
         this.precio = precio;
         this.total = total;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public Producto getProducto() {
