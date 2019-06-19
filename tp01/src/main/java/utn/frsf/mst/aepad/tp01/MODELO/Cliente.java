@@ -13,7 +13,10 @@ public class Cliente {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     private String nombre;
-    private String localidad;
+
+    @ManyToOne
+    @JoinColumn(name = "ID_LOCALIDAD")
+    private Localidad localidad;
 
     @OneToMany(mappedBy = "cliente")
     @JsonIgnore
@@ -28,7 +31,7 @@ public class Cliente {
     public Cliente() {
     }
 
-    public Cliente(int id, String nombre, String localidad, ArrayList<Pedido> pedidosRealizados, MedioDePago medioDePago, int pagosRealizados, int puntosAcumulados) {
+    public Cliente(int id, String nombre, Localidad localidad, ArrayList<Pedido> pedidosRealizados, MedioDePago medioDePago, int pagosRealizados, int puntosAcumulados) {
         this.id = id;
         this.nombre = nombre;
         this.localidad = localidad;
@@ -54,11 +57,11 @@ public class Cliente {
         this.nombre = nombre;
     }
 
-    public String getLocalidad() {
+    public Localidad getLocalidad() {
         return localidad;
     }
 
-    public void setLocalidad(String localidad) {
+    public void setLocalidad(Localidad localidad) {
         this.localidad = localidad;
     }
 
