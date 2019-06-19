@@ -1,0 +1,1 @@
+sudo docker run -d --net red1 --ip 172.19.0.2 -p 3396:3306 -v /home/Desktop/TP01-Aepad/tp01/dbdata:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=root --name arq-mysql mysql

@@ -4,6 +4,7 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import javax.persistence.*;
 import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 public class Cliente {
@@ -16,7 +17,7 @@ public class Cliente {
 
     @OneToMany(mappedBy = "cliente")
     @JsonIgnore
-    private ArrayList<Pedido> pedidosRealizados;
+    private List<Pedido> pedidosRealizados = new ArrayList<Pedido>();
 
     @ManyToOne
     @JoinColumn(name = "ID_MEDIO_DE_PAGO")
@@ -61,7 +62,7 @@ public class Cliente {
         this.localidad = localidad;
     }
 
-    public ArrayList<Pedido> getPedidosRealizados() {
+    public List<Pedido> getPedidosRealizados() {
         return pedidosRealizados;
     }
 

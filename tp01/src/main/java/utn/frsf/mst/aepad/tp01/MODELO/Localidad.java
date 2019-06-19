@@ -9,22 +9,22 @@ import javax.persistence.Id;
 public class Localidad {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private String id;
+    private Integer id;
     private String descripcion;
 
     public Localidad() {
     }
 
-    public Localidad(String id, String descripcion) {
+    public Localidad(Integer id, String descripcion) {
         this.id = id;
         this.descripcion = descripcion;
     }
 
-    public String getId() {
+    public Integer getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
