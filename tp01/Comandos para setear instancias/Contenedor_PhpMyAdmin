@@ -1,0 +1,1 @@
+sudo docker run -d --net red1 --ip 172.19.0.3 --name arq-myadmin -e PMA_HOST=172.19.0.2 -p 9001:80 phpmyadmin/phpmyadmin
