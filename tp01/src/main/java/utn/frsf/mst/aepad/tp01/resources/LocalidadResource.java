@@ -11,6 +11,8 @@ import utn.frsf.mst.aepad.tp01.service.LocalidadService;
 
 import java.util.List;
 
+@RestController
+@RequestMapping("/api")
 public class LocalidadResource {
 
     @Autowired
