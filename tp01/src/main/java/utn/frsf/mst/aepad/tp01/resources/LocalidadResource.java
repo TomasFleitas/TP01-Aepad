@@ -24,8 +24,8 @@ public class LocalidadResource {
     }
 
     @GetMapping("localidad/{id}")
-    public ResponseEntity<Localidad> buscar(@RequestParam(value="id") Integer idProyecto) {
-        return  new ResponseEntity<Localidad>(this.localidadService.buscarPorId(idProyecto), HttpStatus.OK);
+    public ResponseEntity<Localidad> buscar(@PathVariable(required = false) Integer id) {
+        return  new ResponseEntity<Localidad>(this.localidadService.buscarPorId(id), HttpStatus.OK);
     }
 
     @PostMapping("localidad")
@@ -46,8 +46,8 @@ public class LocalidadResource {
     }
 
     @DeleteMapping("localidad/{id}")
-    public ResponseEntity<Void> borrar(@RequestParam(value="id") Integer idProyecto) {
-        this.localidadService.borrar(idProyecto);
+    public ResponseEntity<Void> borrar(@PathVariable(required = false) Integer id) {
+        this.localidadService.borrar(id);
         return new ResponseEntity<Void>(HttpStatus.OK);
     }
 
