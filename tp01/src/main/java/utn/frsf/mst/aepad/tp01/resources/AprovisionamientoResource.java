@@ -28,8 +28,8 @@ public class AprovisionamientoResource {
 
 
     @GetMapping("aprovisionamiento/{id}")
-    public ResponseEntity<Aprovisionamiento> buscar(@RequestParam(value="id") Integer idProyecto) {
-        return  new ResponseEntity<Aprovisionamiento>(this.aprovisionamientoService.buscarPorId(idProyecto), HttpStatus.OK);
+    public ResponseEntity<Aprovisionamiento> buscar(@PathVariable(required = false) Integer id) {
+        return  new ResponseEntity<Aprovisionamiento>(this.aprovisionamientoService.buscarPorId(id), HttpStatus.OK);
     }
 
     @PostMapping("aprovisionamiento")
@@ -50,8 +50,8 @@ public class AprovisionamientoResource {
     }
 
     @DeleteMapping("aprovisionamiento/{id}")
-    public ResponseEntity<Void> borrar(@RequestParam(value="id") Integer idProyecto) {
-        this.aprovisionamientoService.borrar(idProyecto);
+    public ResponseEntity<Void> borrar(@PathVariable(required = false) Integer id) {
+        this.aprovisionamientoService.borrar(id);
         return new ResponseEntity<Void>(HttpStatus.OK);
     }
 
