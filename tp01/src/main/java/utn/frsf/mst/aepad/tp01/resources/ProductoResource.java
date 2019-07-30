@@ -25,8 +25,8 @@ public class ProductoResource {
 
 
     @GetMapping("producto/{id}")
-    public ResponseEntity<Producto> buscar(@RequestParam(defaultValue="id") Integer idProyecto) {
-        return  new ResponseEntity<Producto>(this.productoService.buscarPorId(idProyecto), HttpStatus.OK);
+    public ResponseEntity<Producto> buscar(@PathVariable(required = false) Integer id) {
+        return  new ResponseEntity<Producto>(this.productoService.buscarPorId(id), HttpStatus.OK);
     }
 
     @PostMapping("producto")
