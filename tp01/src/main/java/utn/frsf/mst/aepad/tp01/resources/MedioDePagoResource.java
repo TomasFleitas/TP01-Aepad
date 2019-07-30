@@ -25,8 +25,8 @@ public class MedioDePagoResource {
 
 
     @GetMapping("medioDePago/{id}")
-    public ResponseEntity<MedioDePago> buscar(@RequestParam(value="id") Integer idProyecto) {
-        return  new ResponseEntity<MedioDePago>(this.medioDePagoService.buscarPorId(idProyecto), HttpStatus.OK);
+    public ResponseEntity<MedioDePago> buscar(@PathVariable(required = false) Integer id) {
+        return  new ResponseEntity<MedioDePago>(this.medioDePagoService.buscarPorId(id), HttpStatus.OK);
     }
 
     @PostMapping("medioDePago")
@@ -47,8 +47,8 @@ public class MedioDePagoResource {
     }
 
     @DeleteMapping("medioDePago/{id}")
-    public ResponseEntity<Void> borrar(@RequestParam(value="id") Integer idProyecto) {
-        this.medioDePagoService.borrar(idProyecto);
+    public ResponseEntity<Void> borrar(@PathVariable(required = false) Integer id) {
+        this.medioDePagoService.borrar(id);
         return new ResponseEntity<Void>(HttpStatus.OK);
     }
 
