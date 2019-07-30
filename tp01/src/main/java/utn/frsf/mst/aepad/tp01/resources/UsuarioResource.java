@@ -25,8 +25,8 @@ public class UsuarioResource {
 
 
     @GetMapping("usuario/{id}")
-    public ResponseEntity<Usuario> buscar(@RequestParam(value="id") Integer idProyecto) {
-        return  new ResponseEntity<Usuario>(this.usuarioService.buscarPorId(idProyecto), HttpStatus.OK);
+    public ResponseEntity<Usuario> buscar(@PathVariable(required = false) Integer id) {
+        return  new ResponseEntity<Usuario>(this.usuarioService.buscarPorId(id), HttpStatus.OK);
     }
 
     @PostMapping("usuario")
@@ -47,8 +47,8 @@ public class UsuarioResource {
     }
 
     @DeleteMapping("usuario/{id}")
-    public ResponseEntity<Void> borrar(@RequestParam(value="id") Integer idProyecto) {
-        this.usuarioService.borrar(idProyecto);
+    public ResponseEntity<Void> borrar(@PathVariable(required = false) Integer id) {
+        this.usuarioService.borrar(id);
         return new ResponseEntity<Void>(HttpStatus.OK);
     }
 }
