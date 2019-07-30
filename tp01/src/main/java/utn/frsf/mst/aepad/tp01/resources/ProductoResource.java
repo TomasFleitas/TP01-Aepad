@@ -47,8 +47,8 @@ public class ProductoResource {
     }
 
     @DeleteMapping("producto/{id}")
-    public ResponseEntity<Void> borrar(@RequestParam(value="id") Integer idProyecto) {
-        this.productoService.borrar(idProyecto);
+    public ResponseEntity<Void> borrar(@PathVariable(required = false) Integer id) {
+        this.productoService.borrar(id);
         return new ResponseEntity<Void>(HttpStatus.OK);
     }
 }
