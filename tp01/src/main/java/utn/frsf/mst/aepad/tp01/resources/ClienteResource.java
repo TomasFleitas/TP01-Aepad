@@ -27,8 +27,8 @@ public class ClienteResource {
 
 
     @GetMapping("cliente/{id}")
-    public ResponseEntity<Cliente> buscar(@RequestParam(value="id") Integer idProyecto) {
-        return  new ResponseEntity<Cliente>(this.clienteService.buscarPorId(idProyecto), HttpStatus.OK);
+    public ResponseEntity<Cliente> buscar(@PathVariable(required = false) Integer id) {
+        return  new ResponseEntity<Cliente>(this.clienteService.buscarPorId(id), HttpStatus.OK);
     }
 
     @PostMapping("cliente")
@@ -49,8 +49,8 @@ public class ClienteResource {
     }
 
     @DeleteMapping("cliente/{id}")
-    public ResponseEntity<Void> borrar(@RequestParam(value="id") Integer idProyecto) {
-        this.clienteService.borrar(idProyecto);
+    public ResponseEntity<Void> borrar(@PathVariable(required = false) Integer id) {
+        this.clienteService.borrar(id);
         return new ResponseEntity<Void>(HttpStatus.OK);
     }
 
