@@ -24,8 +24,8 @@ public class PedidoResource {
 
 
     @GetMapping("pedido/{id}")
-    public ResponseEntity<Pedido> buscar(@RequestParam(value="id") Integer idProyecto) {
-        return  new ResponseEntity<Pedido>(this.pedidoService.buscarPorId(idProyecto), HttpStatus.OK);
+    public ResponseEntity<Pedido> buscar(@PathVariable(required = false) Integer id) {
+        return  new ResponseEntity<Pedido>(this.pedidoService.buscarPorId(id), HttpStatus.OK);
     }
 
     @PostMapping("pedido")
@@ -46,8 +46,8 @@ public class PedidoResource {
     }
 
     @DeleteMapping("pedido/{id}")
-    public ResponseEntity<Void> borrar(@RequestParam(value="id") Integer idProyecto) {
-        this.pedidoService.borrar(idProyecto);
+    public ResponseEntity<Void> borrar(@PathVariable(required = false) Integer id) {
+        this.pedidoService.borrar(id);
         return new ResponseEntity<Void>(HttpStatus.OK);
     }
 
