@@ -27,8 +27,8 @@ public class DetalleOrdenCompraResource {
     }
 
     @GetMapping("detalleOrdenCompra/{id}")
-    public ResponseEntity<DetalleOrdenCompra> buscar(@RequestParam(value="id") Integer idProyecto) {
-        return  new ResponseEntity<DetalleOrdenCompra>(this.detalleOrdenCompraService.buscarPorId(idProyecto), HttpStatus.OK);
+    public ResponseEntity<DetalleOrdenCompra> buscar(@PathVariable(required = false) Integer id) {
+        return  new ResponseEntity<DetalleOrdenCompra>(this.detalleOrdenCompraService.buscarPorId(id), HttpStatus.OK);
     }
 
     @PostMapping("detalleOrdenCompra")
@@ -49,8 +49,8 @@ public class DetalleOrdenCompraResource {
     }
 
     @DeleteMapping("detalleOrdenCompra/{id}")
-    public ResponseEntity<Void> borrar(@RequestParam(value="id") Integer idProyecto) {
-        this.detalleOrdenCompraService.borrar(idProyecto);
+    public ResponseEntity<Void> borrar(@PathVariable(required = false) Integer id) {
+        this.detalleOrdenCompraService.borrar(id);
         return new ResponseEntity<Void>(HttpStatus.OK);
     }
 
